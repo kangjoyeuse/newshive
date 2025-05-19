@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:newshive/pages/login_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class IntroductionScreen extends StatefulWidget {
@@ -51,6 +52,10 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
                 TextButton(
                   onPressed: () {
                     // Navigate to home screen
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => LoginScreen())
+                    );
                   },
                   child: Text(
                     'Skip',
@@ -72,6 +77,9 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
                   onPressed: () {
                     if (isLastPage) {
                       // Navigate to home screen
+                      Navigator.pushReplacement(
+                        context,MaterialPageRoute(builder: (context) => const LoginScreen()),
+                      );
                     } else {
                       _controller.nextPage(
                         duration: const Duration(milliseconds: 500),

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:newshive/pages/introduction_screen.dart';
-import 'package:newshive/pages/splash_screen.dart';
 
 void main() => runApp(Newshive());
 
