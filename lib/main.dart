@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newshive/pages/introduction_screen.dart';
 import 'package:newshive/pages/splash_screen.dart';
 
 void main() => runApp(Newshive());
@@ -10,7 +11,7 @@ class Newshive extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Default App',
-      home: SplashScreen(),
+      home: IntroductionScreen(),
     );
   }
 }
