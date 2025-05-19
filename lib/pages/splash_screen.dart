@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gradient_icon/gradient_icon.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class SplashScreen extends StatelessWidget {
